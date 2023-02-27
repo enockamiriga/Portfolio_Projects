@@ -12,7 +12,7 @@ SELECT
 FROM
    coviddeaths 
 WHERE
-   continent IS NOT NULL AND location IN ("India", "China")
+   continent IS NOT NULL -- AND location IN ("India", "China")
 ORDER BY
    continent,location
 ;
@@ -53,8 +53,7 @@ date,
 FROM
    coviddeaths
 WHERE
-   location = 'Ghana'
-AND 
+   -- location = 'Ghana' AND 
    continent IS NOT NULL 
 ORDER BY
    1,2
@@ -72,7 +71,7 @@ SELECT
 FROM
    coviddeaths
 WHERE 
-   continent IS NOT NULL AND location = 'Ghana'
+   continent IS NOT NULL -- AND location = 'Ghana'
 ORDER BY
    1,2
 ;
